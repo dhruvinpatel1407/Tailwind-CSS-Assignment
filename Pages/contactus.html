@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact-Energico</title>
-    
+
     <style>
       * {
         box-sizing: border-box;
@@ -14,8 +14,8 @@
         padding: 0;
       }
     </style>
-      <!-- tailwind css link  -->
-      <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <!-- Header section -->
@@ -105,18 +105,20 @@
           </div>
         </div>
         <div class="container mx-auto mt-3">
-          <!-- One Line Layout for Mobile: Logo on Left, Hamburger on Right -->
+          <!-- One Line Layout -->
           <div
             class="mx-4 mt-4 mb-7 flex justify-between items-center md:hidden"
           >
-            <!-- Left: Logo -->
+            <!-- Logo -->
             <a href="" class="text-2xl mx-4"
               ><img src="../Images/logo.webp" alt="main logo"
             /></a>
 
-            <!-- Right: Hamburger Icon -->
+            <!-- Hambuger Icon -->
             <button id="menu-btn" class="mx-4 text-lime-600 focus:outline-none">
-              <div class="w-10 h-8 flex flex-col justify-between cursor-pointer">
+              <div
+                class="w-10 h-8 flex flex-col justify-between cursor-pointer"
+              >
                 <span class="block w-full h-1 bg-yellow-500"></span>
                 <span class="block w-full h-1 bg-yellow-500"></span>
                 <span class="block w-full h-1 bg-yellow-500"></span>
@@ -125,7 +127,7 @@
             </button>
           </div>
 
-          <!-- Mobile Menu (Initially hidden, shown on toggle) -->
+          <!-- Mobile Menu  -->
           <div
             id="mobile-menu"
             class="hidden items-center md:hidden p-4 space-y-2"
@@ -147,9 +149,9 @@
             >
           </div>
 
-          <!-- Two Line Layout for Larger Screens -->
+          <!-- Layout for Larger Screens -->
           <div class="hidden md:flex flex-col items-center">
-            <!-- First Line: Logo centered for larger screens -->
+            <!-- Logo  -->
             <div class="flex justify-center my-4">
               <a href="#" class="text-2xl"
                 ><img
@@ -159,47 +161,60 @@
               /></a>
             </div>
 
-            <!-- Second Line: Centered Navigation Links -->
-            <div class="flex justify-center space-x-20 mt-2 text-xl lg:text-xl mb-6">
+            <!-- Navigation Links -->
+            <div
+              class="flex justify-center space-x-20 mt-2 text-xl lg:text-xl mb-6"
+            >
               <a href="../index.html" class="hover:text-yellow-300">HOME</a>
               <a href="./about.html" class="hover:text-yellow-300">ABOUT</a>
-              <a href="./contactus.html" class="hover:text-yellow-300 text-yellow-300 underline">CONTACT US</a
+              <a
+                href="./contactus.html"
+                class="hover:text-yellow-300 text-yellow-300 underline"
+                >CONTACT US</a
               >
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <!-- Main content      -->
+    <!-- Main content  -->
     <main>
       <!-- 1st section -->
       <section class="bg-lime-600 py-20">
-        <div class="text-3xl lg:text-4xl font-extrabold text-white text-center">CONTACT US</div>
+        <div class="text-3xl lg:text-4xl font-extrabold text-white text-center">
+          CONTACT US
+        </div>
         <div class="text-white text-center text-3xl pt-4">
           Home /<span class="text-yellow-300"> Contact Us</span>
         </div>
       </section>
 
       <!-- 2nd section -->
-      <section >
+      <section>
         <div>
           <div class="flex flex-col lg:flex-row">
             <!-- Left Column for Company Details -->
-            <div class="w-full lg:w-1/2 bg-white p-6 lg:ps-16 ">
-              <h2 class="text-3xl lg:text-4xl font-extrabold mt-6 mb-4">Get in touch</h2>
+            <div class="w-full lg:w-1/2 bg-white p-6 lg:ps-16">
+              <h2 class="text-5xl lg:text-4xl font-extrabold mt-6 mb-4">
+                Get in touch
+              </h2>
               <p
-                class="mb-10 lg:mb-12 font-bold uppercase text-xl text-lime-600"
+                class="mb-10 lg:mb-12 font-bold uppercase text-2xl lg:text-xl text-lime-600"
               >
                 energico - agriculture & garden care
               </p>
-              <p class="mb-2 text-lg lg:text-xl mb-8 lg:mb-12 lg:pe-36 text-gray-400">
-                <span class="text-xl block font-bold text-lime-600 mb-4 "
+              <p
+                class="mb-2 text-lg lg:text-xl mb-8 lg:mb-12 lg:pe-36 text-gray-400"
+              >
+                <span class="text-xl block font-bold text-lime-600 mb-4"
                   >Toronto Office</span
                 >
                 8949 Kenamar Drive, suite 101 Boston, Ma 92121 Phone.
                 555.376.7872 Fax. 555.376,7873
               </p>
-              <p class="mb-2 text-lg lg:text-xl mb-8 lg:mb-12 lg:pe-36 text-gray-400">
+              <p
+                class="mb-2 text-lg lg:text-xl mb-8 lg:mb-12 lg:pe-36 text-gray-400"
+              >
                 <span class="text-xl block font-bold text-lime-600 mb-4"
                   >HQ Office (Boston, MA, USA)</span
                 >8949 Kenamar Drive, suite 101 Boston, Ma 92121 Phone.
@@ -209,14 +224,15 @@
 
             <!-- Right Column for Form -->
             <div class="w-full lg:w-1/2 bg-gray-100 p-6 lg:ps-12">
-              <h2 class="text-3xl lg:text-4xl font-black lg:ms-6 mt-6 mb-4">Write to us</h2>
+              <h2 class="text-5xl lg:text-4xl font-black lg:ms-6 mt-6 mb-4">
+                Write to us
+              </h2>
               <p class="lg:ms-6 uppercase text-2xl mb-12 text-gray-600">
                 Get a pricing quote for a residential or business solar panel
                 installation
               </p>
               <form>
                 <div class="mb-3 lg:mx-6">
-                 
                   <input
                     type="text"
                     id="name"
@@ -225,7 +241,6 @@
                   />
                 </div>
                 <div class="mb-3 lg:mx-6">
-                  
                   <input
                     type="email"
                     id="email"
@@ -234,7 +249,6 @@
                   />
                 </div>
                 <div class="mb-3 lg:mx-6">
-                 
                   <input
                     type="tel"
                     id="phone"
@@ -243,17 +257,25 @@
                   />
                 </div>
                 <div class="relative mb-3 lg:mx-6 text-sm lg:text-base">
-                  
                   <select
                     id="dropdown"
                     class="appearance-none w-full px-6 py-3 border border-lime-600 border-2 rounded-2xl focus:outline-none focus:ring-2 focus:ring-lime-700"
                   >
-                    <option value="" selected class="bg-lime-500 hover:bg-lime-600">
+                    <option
+                      value=""
+                      selected
+                      class="bg-lime-500 hover:bg-lime-600"
+                    >
                       Do you need a residential or commercial system?
                     </option>
-                    <option value="1" class="bg-lime-500 hover:bg-lime-600">Residential</option>
-                    <option value="2" class="bg-lime-500 hover:bg-lime-600">Commercial</option>
+                    <option value="1" class="bg-lime-500 hover:bg-lime-600">
+                      Residential
+                    </option>
+                    <option value="2" class="bg-lime-500 hover:bg-lime-600">
+                      Commercial
+                    </option>
                   </select>
+
                   <!-- Custom SVG Arrow -->
                   <div
                     class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2"
@@ -275,7 +297,6 @@
                   </div>
                 </div>
                 <div class="mb-3 lg:mx-6">
-                  
                   <input
                     type="text"
                     id="address"
@@ -284,19 +305,31 @@
                   />
                 </div>
                 <div class="relative mb-3 lg:mx-6 text-sm lg:text-base">
-                  
                   <select
                     id="dropdown"
                     class="appearance-none w-full px-6 py-3 border border-2 border-lime-600 rounded-2xl focus:outline-none focus:ring-2 focus:ring-lime-600"
                   >
-                    <option value="" selected class="bg-lime-500 hover:bg-lime-600">
+                    <option
+                      value=""
+                      selected
+                      class="bg-lime-500 hover:bg-lime-600"
+                    >
                       What is your average monthly electricity bill?
                     </option>
-                    <option value="1" class="bg-lime-500 hover:bg-lime-600">less than 1000</option>
-                    <option value="2" class="bg-lime-500 hover:bg-lime-600">1000-2000</option>
-                    <option value="3" class="bg-lime-500 hover:bg-lime-600">3000-5000</option>
-                    <option value="4" class="bg-lime-500 hover:bg-lime-600">More than 5000</option>
+                    <option value="1" class="bg-lime-500 hover:bg-lime-600">
+                      less than 1000
+                    </option>
+                    <option value="2" class="bg-lime-500 hover:bg-lime-600">
+                      1000-2000
+                    </option>
+                    <option value="3" class="bg-lime-500 hover:bg-lime-600">
+                      3000-5000
+                    </option>
+                    <option value="4" class="bg-lime-500 hover:bg-lime-600">
+                      More than 5000
+                    </option>
                   </select>
+
                   <!-- Custom SVG Arrow -->
                   <div
                     class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2"
@@ -333,7 +366,7 @@
     <!-- Footer content  -->
     <footer class="bg-black pt-4">
       <div class="container mx-auto text-center">
-        <!-- Logo in the Middle -->
+        <!-- Logo  -->
         <div class="mb-4 pt-2">
           <img
             src="../Images/footer-logo.png"
@@ -425,9 +458,6 @@
     </footer>
 
     <!-- js file link  -->
-    <script src="../Js/script.js">  </script>
-
-    
-    </body>
-
-    </html>
+    <script src="../Js/script.js"></script>
+  </body>
+</html>
