@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Energico</title>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{ 
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Header section -->
+      <header>
+        <nav>
+            <div class="bg-lime-600 py-3">
+                <div class="container mx-auto flex justify-between items-center">
+      
+                    <!-- Contact Number -->
+                    <div class="mx-4 text-white text-lg hidden md:block">
+                      <span>Call Us Now: 555 376 7872</span>
+                    </div>
+              
+                    <!-- Social Media Icons -->
+                    <div class="mx-4 flex space-x-5 ">
+                      <!-- Facebook -->
+                      <a href="https://www.facebook.com/AlmaBetterOfficial" target="_blank" class="text-white hover:text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.437 9.878v-6.987h-2.54v-2.89h2.54V9.798c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.196 2.238.196v2.463h-1.26c-1.242 0-1.63.772-1.63 1.563v1.878h2.773l-.443 2.89h-2.33V21.88C18.344 21.127 22 16.991 22 12z"/>
+                        </svg>
+                      </a>
+              
+                      <!-- Twitter -->
+                      <a href="https://x.com/AlmaBetter" target="_blank" class="text-white hover:text-blue-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M23 3.00005C22.0424 3.6756 20.9821 4.19248 19.86 4.53005C19.2577 3.83755 18.4573 3.34673 17.567 3.12395C16.6767 2.90118 15.7395 2.95726 14.8821 3.28495C14.0247 3.61264 13.2884 4.19529 12.773 4.95405C12.2576 5.71281 11.9871 6.61224 12 7.53005V8.53005C10.2426 8.57563 8.50127 8.18586 6.93101 7.39553C5.36074 6.6052 4.01032 5.43874 3 4.00005C3 4.00005 -1 13 8 17C5.94053 18.398 3.48716 19.0989 1 19C10 24 21 19 21 7.50005C20.9991 7.22152 20.9723 6.94375 20.92 6.67005C21.9406 5.66357 22.6608 4.39276 23 3.00005Z"/>
+                        </svg>
+                      </a>
+              
+                      <!-- Pinterest -->
+                      <a href="https://t.me/almabetterofficial" target="_blank" class="text-white hover:text-red-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M12 0C5.372 0 0 5.372 0 12c0 5.019 3.128 9.299 7.516 11.057-.104-.939-.198-2.384.041-3.413.22-.948 1.426-6.037 1.426-6.037s-.362-.723-.362-1.793c0-1.678.972-2.932 2.181-2.932 1.028 0 1.524.772 1.524 1.697 0 1.033-.66 2.575-1.001 4.006-.285 1.21.605 2.194 1.79 2.194 2.146 0 3.791-2.261 3.791-5.516 0-2.876-2.07-4.892-5.028-4.892-3.426 0-5.43 2.574-5.43 5.234 0 1.033.398 2.141.895 2.742.099.117.11.22.082.338-.09.368-.297 1.214-.338 1.382-.053.211-.17.256-.392.156-1.457-.613-2.367-2.542-2.367-4.09 0-3.324 2.419-6.38 6.975-6.38 3.657 0 6.5 2.617 6.5 6.118 0 3.631-2.291 6.55-5.476 6.55-1.069 0-2.075-.558-2.419-1.181l-.659 2.513c-.238.916-.88 2.064-1.314 2.769.984.302 2.023.469 3.105.469 6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
+                        </svg>
+                      </a>
+              
+                      <!-- Instagram -->
+                      <a href="https://www.instagram.com/almabetter/" target="_blank" class="text-white hover:text-pink-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.307.975.975 1.245 2.242 1.307 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.307 3.608-.975.975-2.242 1.245-3.608 1.307-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.307-.975-.975-1.245-2.242-1.307-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.307-3.608.975-.975 2.242-1.245 3.608-1.307 1.266-.058 1.646-.07 4.85-.07zm0-2.163C8.755 0 8.333.012 7.053.07 5.772.127 4.554.438 3.55 1.443 2.545 2.448 2.234 3.666 2.177 4.947.65 4.947 0 8.755 0 12s.65 7.053 2.177 7.053c.057 1.281.368 2.499 1.373 3.504.505.505 1.067.867 1.693 1.162.65 1.303 1.807 1.835 3.353 1.963C8.333 23.988 8.755 24 12 24s3.667-.012 4.947-.07c1.281-.057 2.499-.368 3.504-1.373 1.005-1.005 1.315-2.223 1.373-3.504.65-1.303 1.162-1.857 1.443-3.353.057-1.267.07-1.689.07-4.947s-.013-3.667-.07-4.947C23.854 5.222 23.41 4.658 22.443 3.65 21.45 2.655 20.233 2.45 18.947 2.177 17.689.65 12 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.163a3.801 3.801 0 110-7.601 3.801 3.801 0 010 7.601zm7.265-10.163a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
+                        </svg>
+                      </a>
+                    </div>
+              
+                  </div>
+        </div>
+        <div class="container mx-auto">
+
+          <!-- Layout for Mobile: Logo on Left, Hamburger on Right -->
+          <div class="mx-4 my-4 flex justify-between items-center md:hidden">
+            <!--  Logo -->
+            <a href="" class=" text-2xl mx-4"><img src="./Images/logo.webp" alt="main logo"></a>
+    
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="mx-4 text-lime-600 focus:outline-none">
+              <div class="w-10 h-8 flex flex-col justify-between cursor-pointer">
+                <span class="block w-full h-1 bg-yellow-500"></span>
+                <span class="block w-full h-1 bg-yellow-500"></span>
+                <span class="block w-full h-1 bg-yellow-500"></span>
+                <span class="block w-3/5 h-1 bg-yellow-500"></span>
+              </div>
+            </button>
+          </div>
+    
+          <!-- Mobile Menu (Initially hidden) -->
+          <div id="mobile-menu" class="hidden items-center md:hidden p-4 space-y-2">
+            <a href="./index.html" class="block text-center hover:text-yellow-300">HOME</a>
+            <a href="./Pages/about.html" class="block text-center hover:text-yellow-300">ABOUT</a>
+            <a href="./Pages/contactus.html" class="block text-center hover:text-yellow-300">CONTACT US</a>
+          </div>
+    
+          <!-- Layout for Larger Screens -->
+          <div class="hidden md:flex flex-col items-center">
+            <!-- Logo -->
+            <div class="flex justify-center my-4 ">
+              <a href="#" class="text-2xl"><img src="./Images/logo.webp" alt="main logo" class="w-80 h-auto"></a>
+            </div>
+    
+            <!-- Navigation Links -->
+            <div class="flex justify-center space-x-20 mt-2 text-xl lg:text-xl">
+              <a href="./index.html" class="hover:text-yellow-300 text-yellow-300 underline">HOME</a>
+              <a href="./Pages/about.html" class="hover:text-yellow-300">ABOUT</a>
+              <a href="./Pages/contactus.html" class="hover:text-yellow-300">CONTACT US</a>
+            </div>
+          </div>
+    
+        </div>
+      </nav>
+    </header>
+    
+    <!-- Main content      -->
+       <main>
+        <!-- 1st section corousel     -->
+        <section class="md:mt-8 h-[400px]">
+          <div class="relative w-full overflow-hidden" id="carousel">
+            <!-- Carousel Wrapper -->
+            <div class="flex transition-transform  duration-500 ease-in-out w-full h-[400px]">
+              <!-- Slide 1 -->
+              <div class="relative min-w-full h-full bg-cover bg-center" style="background-image: url('./Images/img1.jpg');">
+                <!-- Text -->
+                <div class="absolute inset-0 flex justify-center items-center">
+                  <p class="text-center">
+                   
+                    <span class="text-white text-2xl md:text-3xl lg:text-4xl font-bold pt-6 lg:pt-8 leading-snug">
+                      GARDEN CARE<br class="hidden lg:block"> is our true <br class="hidden lg:block"> passion!
+                    </span>
+                    <span class="block mx-8 text-cyan-300 text-base md:text-lg lg:text-xl mt-4 leading-relaxed">
+                      SO WHENEVER YOU JUST FEEL YOU NEED<br class="hidden lg:block">
+                      A PROFESSIONAL HELPING HAND AT<br class="hidden lg:block">
+                      YOUR GARDEN, CALL US UP!
+                    </span>
+                    <button class="w-fit my-4 md:my-6 lg:my-10 px-8 md:px-10 lg:px-12 py-2 border border-white text-white font-semibold rounded-3xl hover:bg-slate-200 hover:text-black">
+                      FIND OUT MORE
+                    </button>
+                  </p>
+                </div>
+                
+              </div>
+          
+              <!-- Slide 2 -->
+              <div class="relative min-w-full h-full bg-cover bg-center" style="background-image: url('./Images/img2.jpg');">
+                <!-- Text -->
+                <div class="absolute inset-0 flex justify-center items-center">
+                  <p class="text-center">
+                   
+                    <span class="text-white text-2xl md:text-3xl lg:text-4xl font-bold pt-6 lg:pt-8 leading-snug">
+                      GARDEN CARE<br class="hidden lg:block"> is our true <br class="hidden lg:block"> passion!
+                    </span>
+                    <span class="block mx-8 text-cyan-300 text-base md:text-lg lg:text-xl mt-4 leading-relaxed">
+                      SO WHENEVER YOU JUST FEEL YOU NEED<br class="hidden lg:block">
+                      A PROFESSIONAL HELPING HAND AT<br class="hidden lg:block">
+                      YOUR GARDEN, CALL US UP!
+                    </span>
+                    <button class="w-fit my-4 md:my-6 lg:my-10 px-8 md:px-10 lg:px-12 py-2 border border-white text-white font-semibold rounded-3xl hover:bg-slate-200 hover:text-black">
+                      FIND OUT MORE
+                    </button>
+                  </p>
+                </div>
+              </div>
+          
+              <!-- Slide 3 -->
+              <div class="relative min-w-full h-full bg-cover bg-center" style="background-image: url('./Images/img3.jpg');">
+                <!-- Text -->
+                <div class="absolute inset-0 flex justify-center items-center">
+                  <p class="text-center">
+                   
+                    <span class="text-white text-2xl md:text-3xl lg:text-4xl font-bold pt-6 lg:pt-8 leading-snug">
+                      GARDEN CARE<br class="hidden lg:block"> is our true <br class="hidden lg:block"> passion!
+                    </span>
+                    <span class="block mx-8 text-cyan-300 text-base md:text-lg lg:text-xl mt-4 leading-relaxed">
+                      SO WHENEVER YOU JUST FEEL YOU NEED<br class="hidden lg:block">
+                      A PROFESSIONAL HELPING HAND AT<br class="hidden lg:block">
+                      YOUR GARDEN, CALL US UP!
+                    </span>
+                    <button class="w-fit my-4 md:my-6 lg:my-10 px-8 md:px-10 lg:px-12 py-2 border border-white text-white font-semibold rounded-3xl hover:bg-slate-200 hover:text-black">
+                      FIND OUT MORE
+                    </button>
+                  </p>  
+                </div>
+              </div>
+            </div>
+          
+            <!-- Pagination Dots -->
+            <div class="absolute text-lime-600 bottom-[3%] left-0 right-0 flex justify-center space-x-4 ">
+              <button id="dot1" class="w-4 h-4 bg-gray-400 rounded-full"></button>
+              <button id="dot2" class="w-4 h-4 bg-gray-400 rounded-full"></button>
+              <button id="dot3" class="w-4 h-4 bg-gray-400 rounded-full"></button>
+            </div>
+          </div>
+        </section> 
+
+      <!-- 2nd section -->
+       <section>
+        <div class="flex flex-col lg:flex-row" >
+          <!-- Box 1 -->
+            <div class="flex-1 px-4 py-12 bg-yellow-500">
+            <img src="./Images/img4.png" alt="Placeholder Image" class="mx-auto h-16 w-16">
+            <p class="text-center text-black text-2xl mt-8">BEST PRACTICING</p>
+           
+          </div>
+          
+          <!-- Box 2 -->
+          <div class="flex-1 px-4 py-12 bg-yellow-400">
+            <img src="./Images/img5.png" alt="Placeholder Image" class="mx-auto h-16 w-16">
+            <p class="text-center text-white text-2xl mt-8">FIRST PACE</p>
+           
+          </div>
+          
+          <!-- Box 3 -->
+          <div class="flex-1 px-4 py-12 bg-yellow-300">
+            <img src="./Images/img6.png" alt="Placeholder Image" class="mx-auto h-16 w-16">
+            <p class="text-center text-white text-2xl mt-8">RANGE OF SERVICES</p>
+           
+          </div>
+        </div>
+       </section>
+
+       <!-- 3rd section  -->
+        <section class="h-[400px]">
+          <div class="relative w-full h-full mt-12">
+            <!-- Background Image Section -->
+            <div class="hidden lg:block absolute inset-0 lg:w-full bg-cover bg-no-repeat bg-center" style="background-image: url('./Images/img10.jpg');">
+              
+            </div>
+          
+            <!-- Text Section -->
+            <div class="relative w-full lg:w-1/2 ml-auto h-full flex items-center justify-center bg-white p-4 lg:p-8 ">
+              <div class="text-left">
+                <h1 class="text-4xl font-extrabold text-slate-700 mt-8 ms-6 lg:mt-28">Why Energico?</h1>
+                <p class="my-1 lg:text-xl text-lg ms-6 me-8 lg:me-12 text-gray-500"><span class="block text-lg lg:text-xl font-bold pb-6">WELCOME TO THE TOP RATED EXTERIOR DESIGN
+                    COMPANY</span>
+                    After years of practical (both personal and work-related)
+                    experience at hand, our team of passionate gardeners is your
+                    only option!</p>
+                    <button
+                class="w-fit ms-6 mt-6 mb-12 px-8 py-3 text-sm bg-yellow-400 text-white font-semibold rounded-3xl hover:bg-yellow-500"
+              >
+                FIND OUT MORE
+              </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4th section  -->
+        <section class="h-96 mt-6">
+          <div class="relative w-full h-full bg-cover sm:bg-cover bg-center" style="background-image: url('./Images/img11.jpg');">
+              <!-- Text Section -->
+              <div class="absolute inset-0 flex items-center justify-start p-8 lg:p-16">
+                <div class="text-left">
+                  <h1 class="text-3xl lg:text-4xl font-bold text-white"> <span class="block text-yellow-500 pb-2">CREATE</span>
+                      The Perfect Garden!</h1>
+                  <p class="mt-4">
+                      <button
+                      class="w-fit mt-6 px-8 py-3 bg-lime-600 text-sm text-white font-semibold rounded-full hover:bg-lime-700"
+                    >
+                      FIND OUT MORE
+                    </button></p>
+                </div>
+              </div>
+            </div>
+            
+           </section>
+
+          <!-- 5th section  -->
+          <section class=" h-[600px] lg:h-[400px]">
+            <div class="relative w-full h-full bg-cover sm:bg-cover bg-center lg:bg-left" style="background-image: url('./Images/img12.jpg');">
+                <!-- Text Section on top of the background image -->
+                <div class="absolute inset-0 flex items-center justify-start pe-24 ps-8 lg:ps-16">
+                  <div class="text-left lg:w-1/2">
+                    <h1 class="text-lg lg:text-xl text-gray-500 pe-24 lg:pe-48"> <span class="block text-slate-700 text-3xl lg:text-4xl font-extrabold mb-8 ">Perform to the<br class="hidden lg:block">
+                        Highest Standards</span>
+                        With all kinds of garden design/care, lawn & plants in our range, were your natural choice!</h1>
+                    <p class="mt-2 lg:mt-4">
+                        <button
+                        class="w-fit mt-4 lg:mt-6 px-12 py-3 bg-white text-sm text-gray-600 border border-2 border-gray-700 font-semibold rounded-full hover:bg-gray-300"
+                      >
+                        GET A QUOTE
+                      </button></p>
+                  </div>
+                </div>
+              </div>
+              
+            </section> 
+
+          <!-- 6th section  -->
+          <section >
+            <div class="bg-gray-200 text-4xl lg:text-5xl font-bold text-center text-slate-700 py-8">Our Advantages</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 " >
+      <!-- Box 1 -->
+      <div class="bg-gray-200 p-6">
+        <img src="./Images/img13.png" alt="Image 1" class="w-16 h-16 mx-auto" />
+        <h2 class="text-2xl font-semibold mt-4 text-center text-lime-600">CREATIVE IDEAS</h2>
+        <p class="text-gray-600 mt-2 text-center px-8 text-2xl">
+          Serving everyone from household owners to hotels and office, we make
+          sure to provide a truly full-cycle range of exterior design,
+          landscaping, and exterior remodeling services!
+        </p>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="bg-gray-200 p-6">
+        <img src="./Images/img15.png" alt="Image 2" class="w-16 h-16 mx-auto" />
+        <h2 class="text-2xl font-semibold mt-4 text-center text-lime-600">DECORATING</h2>
+        <p class="text-gray-600 mt-2 text-center px-8 text-2xl">
+          It does not really matter is it the Christmas time of the year or not,
+          priming your house with some decorative elements or masonry should not
+          and is not a seasonal fad!
+        </p>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="bg-gray-200 p-6">
+        <img src="./Images/img17.png" alt="Image 3" class="w-16 h-16 mx-auto" />
+        <h2 class="text-2xl font-semibold mt-4 text-center text-lime-600">GARDEN DESIGN</h2>
+        <p class="text-gray-600 mt-2 text-center px-8 text-2xl">
+          Did you ever consider giving your house exterior or your landscape a
+          unique look, implementing some superb design ideas you've seen before
+          in the magazines?
+        </p>
+      </div>
+
+      <!-- Box 4 -->
+      <div class="bg-gray-200 p-6">
+        <img src="./Images/img14.png" alt="Image 4" class="w-16 h-16 mx-auto "/>
+        <h2 class="text-2xl font-semibold mt-4 text-center text-lime-600">EXPERT ADVICE</h2>
+        <p class="text-gray-600 mt-2 text-center px-8 text-2xl">
+          Regardless of how crazy your exterior idea is, our team of
+          design-and-build experts will easily turn it into reality! This is
+          true for projects of any scale!
+        </p>
+      </div>
+
+      <!-- Box 5 -->
+      <div class="bg-gray-200 p-6 lg:pb-20">
+        <img src="./Images/img16.png" alt="Image 5" class="w-16 h-16 mx-auto" />
+        <h2 class="text-2xl font-semibold mt-4 text-center text-lime-600">FRIENDLY PRICES</h2>
+        <p class="text-gray-600 mt-2 text-center px-8 text-2xl">
+          Having so much to offer, we also would love to give you the best
+          pricing on all of our services! This means that as compared to our
+          market rivals, our pricing is indeed fair and friendly!
+        </p>
+      </div>
+
+      <!-- Box 6 -->
+      <div class="bg-gray-200 p-6">
+        <img src="./Images/img18.png" alt="Image 6" class="w-16 h-16 mx-auto" />
+        <h2 class="text-2xl font-semibold mt-4 text-center text-lime-600">SOFTSCAPES</h2>
+        <p class="text-gray-500 mt-2 text-center px-8 text-2xl">
+          Softscaping is the total opposite for the hardscaping in that it is
+          neither as longlasting as the hard structure, nor it is made of
+          materials that are durable.
+        </p>
+      </div>
+    </div>
+          </section>
+
+          <!-- 7th section  -->
+           <section>
+            <div class="p-6 lg:mb-16">
+              <!-- Header -->
+              <h1 class="text-5xl text-slate-700 font-bold text-center my-8">See the Tips & Tricks for Gardeners on Our Blog!</h1>
+            
+              <!-- Container -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-14">
+                <!-- Box 1 -->
+                <div class="bg-white py-8 ps-2 lg:ps-8 flex flex-col items-left">
+                  <img src="./Images/img21.jpg" alt="Image 1" class="w-full h-full mb-4">
+                  <h2 class="text-2xl text-gray-500 font-semibold my-8">THE LESS CHEMICALS YOU USE, THE BETTER!</h2>
+                  <p class="text-xl text-gray-500 text-left">
+                      So, we guess that if you're reading this blog entry
+                      now, you are an avid gardener yourself, right?
+                      Which in turn means that as we're talking about
+                      the ways to compost your garden, the more you
+                      should be listening.</p>
+                </div>
+            
+                <!-- Box 2 -->
+                <div class="bg-white py-8 ps-2 lg:ps-0 lg:pe-8 flex flex-col items-left ">
+                  <img src="./Images/img20.jpg" alt="Image 2" class="w-full h-full mb-4">
+                  <h2 class="text-2xl text-gray-500 font-semibold my-8">THE LESS CHEMICALS YOU USE, THE BETTER!</h2>
+                  <p class="text-xl text-gray-500 text-left">
+                      So, we guess that if you're reading this blog entry
+                      now, you are an avid gardener yourself, right?
+                      Which in turn means that as we're talking about
+                      the ways to compost your garden, the more you
+                      should be listening.</p>
+                </div>
+              </div>
+            </div>
+           </section>
+      </main>
+       
+       <!-- Footer content  -->
+       <footer class="bg-black pt-4">
+
+        <div class="container mx-auto text-center">
+          <!-- Logo in the Middle -->
+          <div class="mb-4 pt-2">
+            <img src="./Images/footer-logo.png" alt="Company Logo" class="h-16 mx-auto">
+          </div>
+      
+          <!-- Social Media Icons -->
+          <div class="flex justify-center space-x-8 mb-2 pt-1">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/AlmaBetterOfficial" target="_blank" class="text-white hover:text-blue-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.437 9.878v-6.987h-2.54v-2.89h2.54V9.798c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.196 2.238.196v2.463h-1.26c-1.242 0-1.63.772-1.63 1.563v1.878h2.773l-.443 2.89h-2.33V21.88C18.344 21.127 22 16.991 22 12z"/>
+              </svg>
+            </a>
+      
+            <!-- Twitter -->
+            <a href="https://x.com/AlmaBetter" target="_blank" class="text-white hover:text-blue-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23 3.00005C22.0424 3.6756 20.9821 4.19248 19.86 4.53005C19.2577 3.83755 18.4573 3.34673 17.567 3.12395C16.6767 2.90118 15.7395 2.95726 14.8821 3.28495C14.0247 3.61264 13.2884 4.19529 12.773 4.95405C12.2576 5.71281 11.9871 6.61224 12 7.53005V8.53005C10.2426 8.57563 8.50127 8.18586 6.93101 7.39553C5.36074 6.6052 4.01032 5.43874 3 4.00005C3 4.00005 -1 13 8 17C5.94053 18.398 3.48716 19.0989 1 19C10 24 21 19 21 7.50005C20.9991 7.22152 20.9723 6.94375 20.92 6.67005C21.9406 5.66357 22.6608 4.39276 23 3.00005Z"/>
+              </svg>
+            </a>
+      
+            <!-- Pinterest -->
+            <a href="https://t.me/almabetterofficial" target="_blank" class="text-white hover:text-red-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0C5.372 0 0 5.372 0 12c0 5.019 3.128 9.299 7.516 11.057-.104-.939-.198-2.384.041-3.413.22-.948 1.426-6.037 1.426-6.037s-.362-.723-.362-1.793c0-1.678.972-2.932 2.181-2.932 1.028 0 1.524.772 1.524 1.697 0 1.033-.66 2.575-1.001 4.006-.285 1.21.605 2.194 1.79 2.194 2.146 0 3.791-2.261 3.791-5.516 0-2.876-2.07-4.892-5.028-4.892-3.426 0-5.43 2.574-5.43 5.234 0 1.033.398 2.141.895 2.742.099.117.11.22.082.338-.09.368-.297 1.214-.338 1.382-.053.211-.17.256-.392.156-1.457-.613-2.367-2.542-2.367-4.09 0-3.324 2.419-6.38 6.975-6.38 3.657 0 6.5 2.617 6.5 6.118 0 3.631-2.291 6.55-5.476 6.55-1.069 0-2.075-.558-2.419-1.181l-.659 2.513c-.238.916-.88 2.064-1.314 2.769.984.302 2.023.469 3.105.469 6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
+              </svg>
+            </a>
+      
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/almabetter/" target="_blank" class="text-white hover:text-pink-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.307.975.975 1.245 2.242 1.307 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.307 3.608-.975.975-2.242 1.245-3.608 1.307-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.307-.975-.975-1.245-2.242-1.307-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.307-3.608.975-.975 2.242-1.245 3.608-1.307 1.266-.058 1.646-.07 4.85-.07zm0-2.163C8.755 0 8.333.012 7.053.07 5.772.127 4.554.438 3.55 1.443 2.545 2.448 2.234 3.666 2.177 4.947.65 4.947 0 8.755 0 12s.65 7.053 2.177 7.053c.057 1.281.368 2.499 1.373 3.504.505.505 1.067.867 1.693 1.162.65 1.303 1.807 1.835 3.353 1.963C8.333 23.988 8.755 24 12 24s3.667-.012 4.947-.07c1.281-.057 2.499-.368 3.504-1.373 1.005-1.005 1.315-2.223 1.373-3.504.65-1.303 1.162-1.857 1.443-3.353.057-1.267.07-1.689.07-4.947s-.013-3.667-.07-4.947c-.063-1.281-.368-2.499-1.373-3.504-.505-.505-1.067-.867-1.693-1.162C15.65.378 14.493-.267 12.947-.491C13.817-.667 13.817-.667 12 0zM12 5.839a6.161 6.161 0 100 12.322 6.161 6.161 0 000-12.322zM12 8.598a3.404 3.404 0 100 6.807 3.404 3.404 0 000-6.807zM16.47 4.13a1.342 1.342 0 110-2.684 1.342 1.342 0 110 2.684z"/>
+              </svg>
+            </a>
+          </div>
+      
+          <!-- Copyright Notice -->
+          <div class="text-lg text-white pb-12">
+            Energico &copy; 2022 &bull; Privacy Policy
+          </div>
+        </div>
+       </footer>
+      
+       <!-- js file link  -->
+      <script src="./Js/script.js"> </script>
+      
+    </body>
+
+    </html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-Energico</title>
+    
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+      <!-- tailwind css link  -->
+      <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <nav>
+        <div class="bg-lime-600 py-3">
+          <div class="container mx-auto flex justify-between items-center">
+            <!-- Contact Number -->
+            <div class="mx-4 text-white text-lg hidden md:block">
+              <span>Call Us Now: 555 376 7872</span>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="mx-4 flex space-x-5">
+              <!-- Facebook -->
+              <a
+                href="https://www.facebook.com/AlmaBetterOfficial"
+                target="_blank"
+                class="text-white hover:text-blue-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.437 9.878v-6.987h-2.54v-2.89h2.54V9.798c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.196 2.238.196v2.463h-1.26c-1.242 0-1.63.772-1.63 1.563v1.878h2.773l-.443 2.89h-2.33V21.88C18.344 21.127 22 16.991 22 12z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Twitter -->
+              <a
+                href="https://x.com/AlmaBetter"
+                target="_blank"
+                class="text-white hover:text-blue-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23 3.00005C22.0424 3.6756 20.9821 4.19248 19.86 4.53005C19.2577 3.83755 18.4573 3.34673 17.567 3.12395C16.6767 2.90118 15.7395 2.95726 14.8821 3.28495C14.0247 3.61264 13.2884 4.19529 12.773 4.95405C12.2576 5.71281 11.9871 6.61224 12 7.53005V8.53005C10.2426 8.57563 8.50127 8.18586 6.93101 7.39553C5.36074 6.6052 4.01032 5.43874 3 4.00005C3 4.00005 -1 13 8 17C5.94053 18.398 3.48716 19.0989 1 19C10 24 21 19 21 7.50005C20.9991 7.22152 20.9723 6.94375 20.92 6.67005C21.9406 5.66357 22.6608 4.39276 23 3.00005Z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Pinterest -->
+              <a
+                href="https://t.me/almabetterofficial"
+                target="_blank"
+                class="text-white hover:text-red-600"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 0C5.372 0 0 5.372 0 12c0 5.019 3.128 9.299 7.516 11.057-.104-.939-.198-2.384.041-3.413.22-.948 1.426-6.037 1.426-6.037s-.362-.723-.362-1.793c0-1.678.972-2.932 2.181-2.932 1.028 0 1.524.772 1.524 1.697 0 1.033-.66 2.575-1.001 4.006-.285 1.21.605 2.194 1.79 2.194 2.146 0 3.791-2.261 3.791-5.516 0-2.876-2.07-4.892-5.028-4.892-3.426 0-5.43 2.574-5.43 5.234 0 1.033.398 2.141.895 2.742.099.117.11.22.082.338-.09.368-.297 1.214-.338 1.382-.053.211-.17.256-.392.156-1.457-.613-2.367-2.542-2.367-4.09 0-3.324 2.419-6.38 6.975-6.38 3.657 0 6.5 2.617 6.5 6.118 0 3.631-2.291 6.55-5.476 6.55-1.069 0-2.075-.558-2.419-1.181l-.659 2.513c-.238.916-.88 2.064-1.314 2.769.984.302 2.023.469 3.105.469 6.627 0 12-5.373 12-12S18.627 0 12 0z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/almabetter/"
+                target="_blank"
+                class="text-white hover:text-pink-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.307.975.975 1.245 2.242 1.307 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.307 3.608-.975.975-2.242 1.245-3.608 1.307-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.307-.975-.975-1.245-2.242-1.307-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.307-3.608.975-.975 2.242-1.245 3.608-1.307 1.266-.058 1.646-.07 4.85-.07zm0-2.163C8.755 0 8.333.012 7.053.07 5.772.127 4.554.438 3.55 1.443 2.545 2.448 2.234 3.666 2.177 4.947.65 4.947 0 8.755 0 12s.65 7.053 2.177 7.053c.057 1.281.368 2.499 1.373 3.504.505.505 1.067.867 1.693 1.162.65 1.303 1.807 1.835 3.353 1.963C8.333 23.988 8.755 24 12 24s3.667-.012 4.947-.07c1.281-.057 2.499-.368 3.504-1.373 1.005-1.005 1.315-2.223 1.373-3.504.65-1.303 1.162-1.857 1.443-3.353.057-1.267.07-1.689.07-4.947s-.013-3.667-.07-4.947C23.854 5.222 23.41 4.658 22.443 3.65 21.45 2.655 20.233 2.45 18.947 2.177 17.689.65 12 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.163a3.801 3.801 0 110-7.601 3.801 3.801 0 010 7.601zm7.265-10.163a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container mx-auto mt-3">
+          <!-- One Line Layout for Mobile: Logo on Left, Hamburger on Right -->
+          <div
+            class="mx-4 mt-4 mb-7 flex justify-between items-center md:hidden"
+          >
+            <!-- Left: Logo -->
+            <a href="" class="text-2xl mx-4"
+              ><img src="../Images/logo.webp" alt="main logo"
+            /></a>
+
+            <!-- Right: Hamburger Icon -->
+            <button id="menu-btn" class="mx-4 text-lime-600 focus:outline-none">
+              <div class="w-10 h-8 flex flex-col justify-between cursor-pointer">
+                <span class="block w-full h-1 bg-yellow-500"></span>
+                <span class="block w-full h-1 bg-yellow-500"></span>
+                <span class="block w-full h-1 bg-yellow-500"></span>
+                <span class="block w-3/5 h-1 bg-yellow-500"></span>
+              </div>
+            </button>
+          </div>
+
+          <!-- Mobile Menu (Initially hidden, shown on toggle) -->
+          <div
+            id="mobile-menu"
+            class="hidden items-center md:hidden p-4 space-y-2"
+          >
+            <a
+              href="../index.html"
+              class="block text-center hover:text-yellow-300"
+              >HOME</a
+            >
+            <a
+              href="./about.html"
+              class="block text-center hover:text-yellow-300"
+              >ABOUT</a
+            >
+            <a
+              href="./contactus.html"
+              class="block text-center hover:text-yellow-300"
+              >CONTACT US</a
+            >
+          </div>
+
+          <!-- Two Line Layout for Larger Screens -->
+          <div class="hidden md:flex flex-col items-center">
+            <!-- First Line: Logo centered for larger screens -->
+            <div class="flex justify-center my-4">
+              <a href="#" class="text-2xl"
+                ><img
+                  src="../Images/logo.webp"
+                  alt="main logo"
+                  class="w-80 h-auto"
+              /></a>
+            </div>
+
+            <!-- Second Line: Centered Navigation Links -->
+            <div class="flex justify-center space-x-20 mt-2 text-xl lg:text-xl mb-6">
+              <a href="../index.html" class="hover:text-yellow-300">HOME</a>
+              <a href="./about.html" class="hover:text-yellow-300">ABOUT</a>
+              <a href="./contactus.html" class="hover:text-yellow-300 text-yellow-300 underline">CONTACT US</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main content      -->
+    <main>
+      <!-- 1st section -->
+      <section class="bg-lime-600 py-20">
+        <div class="text-3xl lg:text-4xl font-extrabold text-white text-center">CONTACT US</div>
+        <div class="text-white text-center text-3xl pt-4">
+          Home /<span class="text-yellow-300"> Contact Us</span>
+        </div>
+      </section>
+
+      <!-- 2nd section -->
+      <section >
+        <div>
+          <div class="flex flex-col lg:flex-row">
+            <!-- Left Column for Company Details -->
+            <div class="w-full lg:w-1/2 bg-white p-6 lg:ps-16 ">
+              <h2 class="text-3xl lg:text-4xl font-extrabold mt-6 mb-4">Get in touch</h2>
+              <p
+                class="mb-10 lg:mb-12 font-bold uppercase text-xl text-lime-600"
+              >
+                energico - agriculture & garden care
+              </p>
+              <p class="mb-2 text-lg lg:text-xl mb-8 lg:mb-12 lg:pe-36 text-gray-400">
+                <span class="text-xl block font-bold text-lime-600 mb-4 "
+                  >Toronto Office</span
+                >
+                8949 Kenamar Drive, suite 101 Boston, Ma 92121 Phone.
+                555.376.7872 Fax. 555.376,7873
+              </p>
+              <p class="mb-2 text-lg lg:text-xl mb-8 lg:mb-12 lg:pe-36 text-gray-400">
+                <span class="text-xl block font-bold text-lime-600 mb-4"
+                  >HQ Office (Boston, MA, USA)</span
+                >8949 Kenamar Drive, suite 101 Boston, Ma 92121 Phone.
+                555.376.7872 Fax. 555.376.7873
+              </p>
+            </div>
+
+            <!-- Right Column for Form -->
+            <div class="w-full lg:w-1/2 bg-gray-100 p-6 lg:ps-12">
+              <h2 class="text-3xl lg:text-4xl font-black lg:ms-6 mt-6 mb-4">Write to us</h2>
+              <p class="lg:ms-6 uppercase text-2xl mb-12 text-gray-600">
+                Get a pricing quote for a residential or business solar panel
+                installation
+              </p>
+              <form>
+                <div class="mb-3 lg:mx-6">
+                 
+                  <input
+                    type="text"
+                    id="name"
+                    class="placeholder:text-sm lg:placeholder:text-base w-full px-6 py-3 border border-2 border-lime-600 rounded-2xl focus:outline-none focus:ring-2 focus:ring-lime-700 placeholder-black"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div class="mb-3 lg:mx-6">
+                  
+                  <input
+                    type="email"
+                    id="email"
+                    class="placeholder:text-sm lg:placeholder:text-base w-full px-6 py-3 border border-2 border-lime-600 rounded-2xl focus:outline-none focus:ring-2 focus:ring-lime-700 placeholder-black"
+                    placeholder="Your e-mail"
+                  />
+                </div>
+                <div class="mb-3 lg:mx-6">
+                 
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="placeholder:text-sm lg:placeholder:text-base w-full px-6 py-3 border border-2 border-lime-600 rounded-2xl focus:outline-none focus:ring-2 focus:ring-lime-700 placeholder-black"
+                    placeholder="Phone"
+                  />
+                </div>
+                <div class="relative mb-3 lg:mx-6 text-sm lg:text-base">
+                  
+                  <select
+                    id="dropdown"
+                    class="appearance-none w-full px-6 py-3 border border-lime-600 border-2 rounded-2xl focus:outline-none focus:ring-2 focus:ring-lime-700"
+                  >
+                    <option value="" selected class="bg-lime-500 hover:bg-lime-600">
+                      Do you need a residential or commercial system?
+                    </option>
+                    <option value="1" class="bg-lime-500 hover:bg-lime-600">Residential</option>
+                    <option value="2" class="bg-lime-500 hover:bg-lime-600">Commercial</option>
+                  </select>
+                  <!-- Custom SVG Arrow -->
+                  <div
+                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2"
+                  >
+                    <svg
+                      class="w-5 h-5 text-lime-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="mb-3 lg:mx-6">
+                  
+                  <input
+                    type="text"
+                    id="address"
+                    class="placeholder:text-sm lg:placeholder:text-base w-full px-6 py-3 border border-2 border-lime-600 rounded-2xl focus:outline-none focus:ring-2 focus:ring-lime-700 placeholder-black"
+                    placeholder="Street Address"
+                  />
+                </div>
+                <div class="relative mb-3 lg:mx-6 text-sm lg:text-base">
+                  
+                  <select
+                    id="dropdown"
+                    class="appearance-none w-full px-6 py-3 border border-2 border-lime-600 rounded-2xl focus:outline-none focus:ring-2 focus:ring-lime-600"
+                  >
+                    <option value="" selected class="bg-lime-500 hover:bg-lime-600">
+                      What is your average monthly electricity bill?
+                    </option>
+                    <option value="1" class="bg-lime-500 hover:bg-lime-600">less than 1000</option>
+                    <option value="2" class="bg-lime-500 hover:bg-lime-600">1000-2000</option>
+                    <option value="3" class="bg-lime-500 hover:bg-lime-600">3000-5000</option>
+                    <option value="4" class="bg-lime-500 hover:bg-lime-600">More than 5000</option>
+                  </select>
+                  <!-- Custom SVG Arrow -->
+                  <div
+                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2"
+                  >
+                    <svg
+                      class="w-5 h-5 text-lime-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  class="text-sm lg:text-base lg:mx-6 w-auto bg-lime-600 text-white py-2 px-6 mb-6 mt-4 lg:mb-8 rounded-3xl hover:bg-lime-700"
+                >
+                  REQUEST QUOTE
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer content  -->
+    <footer class="bg-black pt-4">
+      <div class="container mx-auto text-center">
+        <!-- Logo in the Middle -->
+        <div class="mb-4 pt-2">
+          <img
+            src="../Images/footer-logo.png"
+            alt="Company Logo"
+            class="h-16 mx-auto"
+          />
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex justify-center space-x-8 mb-2 pt-1">
+          <!-- Facebook -->
+          <a
+            href="https://www.facebook.com/AlmaBetterOfficial"
+            target="_blank"
+            class="text-white hover:text-blue-500"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.437 9.878v-6.987h-2.54v-2.89h2.54V9.798c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.196 2.238.196v2.463h-1.26c-1.242 0-1.63.772-1.63 1.563v1.878h2.773l-.443 2.89h-2.33V21.88C18.344 21.127 22 16.991 22 12z"
+              />
+            </svg>
+          </a>
+
+          <!-- Twitter -->
+          <a
+            href="https://x.com/AlmaBetter"
+            target="_blank"
+            class="text-white hover:text-blue-400"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 3.00005C22.0424 3.6756 20.9821 4.19248 19.86 4.53005C19.2577 3.83755 18.4573 3.34673 17.567 3.12395C16.6767 2.90118 15.7395 2.95726 14.8821 3.28495C14.0247 3.61264 13.2884 4.19529 12.773 4.95405C12.2576 5.71281 11.9871 6.61224 12 7.53005V8.53005C10.2426 8.57563 8.50127 8.18586 6.93101 7.39553C5.36074 6.6052 4.01032 5.43874 3 4.00005C3 4.00005 -1 13 8 17C5.94053 18.398 3.48716 19.0989 1 19C10 24 21 19 21 7.50005C20.9991 7.22152 20.9723 6.94375 20.92 6.67005C21.9406 5.66357 22.6608 4.39276 23 3.00005Z"
+              />
+            </svg>
+          </a>
+
+          <!-- Pinterest -->
+          <a
+            href="https://t.me/almabetterofficial"
+            target="_blank"
+            class="text-white hover:text-red-600"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0C5.372 0 0 5.372 0 12c0 5.019 3.128 9.299 7.516 11.057-.104-.939-.198-2.384.041-3.413.22-.948 1.426-6.037 1.426-6.037s-.362-.723-.362-1.793c0-1.678.972-2.932 2.181-2.932 1.028 0 1.524.772 1.524 1.697 0 1.033-.66 2.575-1.001 4.006-.285 1.21.605 2.194 1.79 2.194 2.146 0 3.791-2.261 3.791-5.516 0-2.876-2.07-4.892-5.028-4.892-3.426 0-5.43 2.574-5.43 5.234 0 1.033.398 2.141.895 2.742.099.117.11.22.082.338-.09.368-.297 1.214-.338 1.382-.053.211-.17.256-.392.156-1.457-.613-2.367-2.542-2.367-4.09 0-3.324 2.419-6.38 6.975-6.38 3.657 0 6.5 2.617 6.5 6.118 0 3.631-2.291 6.55-5.476 6.55-1.069 0-2.075-.558-2.419-1.181l-.659 2.513c-.238.916-.88 2.064-1.314 2.769.984.302 2.023.469 3.105.469 6.627 0 12-5.373 12-12S18.627 0 12 0z"
+              />
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/almabetter/"
+            target="_blank"
+            class="text-white hover:text-pink-500"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.307.975.975 1.245 2.242 1.307 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.307 3.608-.975.975-2.242 1.245-3.608 1.307-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.307-.975-.975-1.245-2.242-1.307-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.307-3.608.975-.975 2.242-1.245 3.608-1.307 1.266-.058 1.646-.07 4.85-.07zm0-2.163C8.755 0 8.333.012 7.053.07 5.772.127 4.554.438 3.55 1.443 2.545 2.448 2.234 3.666 2.177 4.947.65 4.947 0 8.755 0 12s.65 7.053 2.177 7.053c.057 1.281.368 2.499 1.373 3.504.505.505 1.067.867 1.693 1.162.65 1.303 1.807 1.835 3.353 1.963C8.333 23.988 8.755 24 12 24s3.667-.012 4.947-.07c1.281-.057 2.499-.368 3.504-1.373 1.005-1.005 1.315-2.223 1.373-3.504.65-1.303 1.162-1.857 1.443-3.353.057-1.267.07-1.689.07-4.947s-.013-3.667-.07-4.947c-.063-1.281-.368-2.499-1.373-3.504-.505-.505-1.067-.867-1.693-1.162C15.65.378 14.493-.267 12.947-.491C13.817-.667 13.817-.667 12 0zM12 5.839a6.161 6.161 0 100 12.322 6.161 6.161 0 000-12.322zM12 8.598a3.404 3.404 0 100 6.807 3.404 3.404 0 000-6.807zM16.47 4.13a1.342 1.342 0 110-2.684 1.342 1.342 0 110 2.684z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Copyright Notice -->
+        <div class="text-lg text-white pb-12">
+          Energico &copy; 2022 &bull; Privacy Policy
+        </div>
+      </div>
+    </footer>
+
+    <!-- js file link  -->
+    <script src="../Js/script.js">  </script>
+
+    
+    </body>
+
+    </html>
